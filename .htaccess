@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /kamuda.lk
+RewriteCond $1 !^(index\.php|images|ext|logs|css|js|font|captcha|userdata|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
